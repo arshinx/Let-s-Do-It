@@ -160,20 +160,30 @@
                                 <frame key="frameInset" minX="155" minY="78" width="62" height="12"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bo-y0-wUw">
-                                <frame key="frameInset" minX="133" minY="123" width="113" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Home Button"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQO-0f-4vx">
                                 <frame key="frameInset" minX="12" minY="123" width="113" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="General Button Deselected"/>
+                                <state key="normal" title="General Button" image="General Button Deselected"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bo-y0-wUw">
+                                <frame key="frameInset" minX="133" minY="123" width="113" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home Button" image="Home Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cR6-Nv-IgN">
                                 <frame key="frameInset" minX="254" minY="123" width="113" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="List Button Deselected"/>
+                                <state key="normal" title="List Button" image="List Button Deselected"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZs-gQ-XHb">
+                                <frame key="frameInset" minX="39" minY="295" width="86.5" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Items" image="Text - Add bus stop"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3N-cG-RLG">
+                                <frame key="frameInset" minX="305.5" minY="295" width="24.5" height="12.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Edit" image="Text - Edit"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -225,6 +235,8 @@
         <image name="Home Button" width="226" height="160"/>
         <image name="List Button Deselected" width="226" height="160"/>
         <image name="Navigation Button - New" width="36" height="28"/>
+        <image name="Text - Add bus stop" width="173" height="30"/>
+        <image name="Text - Edit" width="49" height="25"/>
         <image name="Text - MY LIST ITEMS" width="124" height="24"/>
     </resources>
 </document>
