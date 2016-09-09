@@ -211,8 +211,8 @@
                                                     <color key="textColor" red="0.65098039215686276" green="0.66274509803921566" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mj3-KR-VFI">
-                                                    <frame key="frameInset" minX="305.5" minY="17" width="13" height="23"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Arrow Select" translatesAutoresizingMaskIntoConstraints="NO" id="mj3-KR-VFI">
+                                                    <frame key="frameInset" minX="337" minY="28" width="13" height="23"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
@@ -266,6 +266,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Arrow Select" width="17" height="27"/>
         <image name="General Button Deselected" width="226" height="160"/>
         <image name="Home Button" width="226" height="160"/>
         <image name="List Button Deselected" width="226" height="160"/>
