@@ -148,23 +148,36 @@
                         <viewControllerLayoutGuide type="bottom" id="Gdh-xD-8ao"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="I4t-as-0aN">
-                        <rect key="frame" x="0.0" y="0.0" width="750" height="1334"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7S-QB-gWG">
-                                <frame key="frameInset" minX="36" minY="28" width="57" height="103"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7S-QB-gWG">
+                                <frame key="frameInset" minX="28.5" minY="51.5" width="18" height="14"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Navigation Button - New"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Text - MY LIST ITEMS" translatesAutoresizingMaskIntoConstraints="NO" id="2eG-AL-xam">
-                                <frame key="frameInset" minX="310" minY="156" width="124" height="24"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Text - MY LIST ITEMS" translatesAutoresizingMaskIntoConstraints="NO" id="2eG-AL-xam">
+                                <frame key="frameInset" minX="155" minY="78" width="62" height="12"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bo-y0-wUw">
+                                <frame key="frameInset" minX="133" minY="123" width="113" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Home Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQO-0f-4vx">
+                                <frame key="frameInset" minX="12" minY="123" width="113" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="General Button Deselected"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cR6-Nv-IgN">
+                                <frame key="frameInset" minX="254" minY="123" width="113" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="List Button Deselected"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="750" height="1334"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7LQ-cd-Pk8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,6 +221,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="General Button Deselected" width="226" height="160"/>
+        <image name="Home Button" width="226" height="160"/>
+        <image name="List Button Deselected" width="226" height="160"/>
         <image name="Navigation Button - New" width="36" height="28"/>
         <image name="Text - MY LIST ITEMS" width="124" height="24"/>
     </resources>
