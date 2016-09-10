@@ -460,8 +460,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oz2-xD-cF1">
-                                <frame key="frameInset" minX="158" minY="25" width="59" height="33"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oz2-xD-cF1">
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Update">
                                     <color key="titleColor" red="0.30588235289999999" green="0.31764705879999999" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
@@ -470,21 +469,23 @@
                                     <action selector="update:" destination="vql-Nb-3Mu" eventType="touchUpInside" id="2is-pP-zbo"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3aX-lY-i4r">
-                                <frame key="frameInset" minX="37" minY="100" width="300" height="44"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Text Here..." textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="3aX-lY-i4r">
+                                <frame key="frameInset" minX="38" minY="100" width="300" height="44"/>
+                                <color key="tintColor" red="0.21960784489999999" green="0.0078431377190000002" blue="0.85490196939999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="LOl-xw-wJ8"/>
                                     <constraint firstAttribute="height" constant="44" id="ZDa-jz-C5b"/>
                                 </constraints>
                                 <color key="textColor" red="0.21960784489999999" green="0.0078431377190000002" blue="0.85490196939999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3aX-lY-i4r" firstAttribute="centerX" secondItem="Q1k-1a-snS" secondAttribute="centerX" id="It0-1e-Kzu"/>
                             <constraint firstItem="3aX-lY-i4r" firstAttribute="top" secondItem="Oz2-xD-cF1" secondAttribute="bottom" constant="44" id="OBA-Lf-NHQ"/>
+                            <constraint firstItem="Oz2-xD-cF1" firstAttribute="top" secondItem="2j7-Of-N31" secondAttribute="bottom" constant="10" id="kJL-uH-jJg"/>
                             <constraint firstItem="Oz2-xD-cF1" firstAttribute="centerX" secondItem="Q1k-1a-snS" secondAttribute="centerX" id="p7o-nh-3jN"/>
                         </constraints>
                     </view>
