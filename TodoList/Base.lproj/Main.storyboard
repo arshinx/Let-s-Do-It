@@ -197,12 +197,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Edit" image="Text - Edit"/>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UmN-m0-H7c">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UmN-m0-H7c">
                                 <frame key="frameInset" minY="368" width="375" height="299"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="Jtw-gS-La4" customClass="ItemCell" customModule="LetsDoIt" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="Jtw-gS-La4">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jtw-gS-La4" id="ve3-tB-INY">
@@ -213,14 +213,7 @@
                                                     <frame key="frameInset" minX="38" minY="22" width="54.5" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="13"/>
-                                                    <color key="textColor" red="0.30588235294117649" green="0.31764705882352939" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grocery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgL-ge-vGz">
-                                                    <frame key="frameInset" minX="38" minY="44" width="45.5" height="13.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="10"/>
-                                                    <color key="textColor" red="0.65098039215686276" green="0.66274509803921566" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Arrow Select" translatesAutoresizingMaskIntoConstraints="NO" id="mj3-KR-VFI">
@@ -231,8 +224,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="imageMark" destination="mj3-KR-VFI" id="g1l-mD-B1K"/>
-                                            <outlet property="itemName" destination="Lw3-U3-7z7" id="mic-w8-bDy"/>
-                                            <outlet property="itemType" destination="YgL-ge-vGz" id="7Ve-jb-p6Q"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -265,23 +256,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEY-hw-e0M">
+                            <button opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEY-hw-e0M">
                                 <frame key="frameInset" minX="229" minY="28" width="130" height="22.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add" image="Text - Add bus stop"/>
                                 <connections>
                                     <action selector="save:" destination="OWc-Q1-rRI" eventType="touchUpInside" id="Vix-GK-ann"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRl-Q9-aIB">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRl-Q9-aIB">
                                 <frame key="frameInset" minX="16" minY="28" width="130" height="22.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
                                     <action selector="cancel:" destination="OWc-Q1-rRI" eventType="touchUpInside" id="9gr-Ug-9x6"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MZN-vG-en2">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MZN-vG-en2">
                                 <frame key="frameInset" minX="58" minY="143" width="258" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="m2s-TP-lfF"/>
@@ -293,6 +282,14 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gEY-hw-e0M" firstAttribute="top" secondItem="fMz-Xu-7f7" secondAttribute="bottom" constant="8" id="2rS-eN-qdM"/>
+                            <constraint firstItem="MZN-vG-en2" firstAttribute="top" secondItem="pRl-Q9-aIB" secondAttribute="bottom" constant="92.5" id="G6a-aW-opk"/>
+                            <constraint firstItem="MZN-vG-en2" firstAttribute="leading" secondItem="Mgf-im-SmG" secondAttribute="leadingMargin" constant="42" id="Has-Xs-jxP"/>
+                            <constraint firstItem="pRl-Q9-aIB" firstAttribute="leading" secondItem="Mgf-im-SmG" secondAttribute="leadingMargin" id="MnW-GG-E0E"/>
+                            <constraint firstItem="pRl-Q9-aIB" firstAttribute="top" secondItem="fMz-Xu-7f7" secondAttribute="bottom" constant="8" id="f1G-Hp-w7h"/>
+                            <constraint firstItem="gEY-hw-e0M" firstAttribute="trailing" secondItem="Mgf-im-SmG" secondAttribute="trailingMargin" id="mlh-m5-Ngt"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="textField" destination="MZN-vG-en2" id="Qcz-hL-127"/>
@@ -337,6 +334,117 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UuD-uM-va1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1895" y="460"/>
+        </scene>
+        <!--Todo List Controller-->
+        <scene sceneID="F79-9e-ebz">
+            <objects>
+                <viewController id="gCc-KS-aW2" customClass="TodoListController" customModule="LetsDoIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Wp-I0-MMO"/>
+                        <viewControllerLayoutGuide type="bottom" id="jWr-LO-3sT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3gF-MG-WXv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEm-Zf-knK">
+                                <frame key="frameInset" minX="28.5" minY="51.5" width="18" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Navigation Button - New"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Text - MY LIST ITEMS" translatesAutoresizingMaskIntoConstraints="NO" id="Dkc-Tc-eEt">
+                                <frame key="frameInset" minX="155" minY="78" width="62" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FD9-X8-VOB">
+                                <frame key="frameInset" minX="12" minY="123" width="113" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="General Button" image="General Button Deselected"/>
+                                <connections>
+                                    <action selector="generalButtonPressed:" destination="gCc-KS-aW2" eventType="touchUpInside" id="0ca-SR-ezr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOA-wi-Df2">
+                                <frame key="frameInset" minX="133" minY="123" width="113" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home Button" image="Home Button"/>
+                                <connections>
+                                    <action selector="homebuttonPressed:" destination="gCc-KS-aW2" eventType="touchUpInside" id="sdK-Ja-8IT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VzA-O9-8P9">
+                                <frame key="frameInset" minX="254" minY="123" width="113" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="List Button" image="List Button Deselected"/>
+                                <connections>
+                                    <action selector="listButtonPressed:" destination="gCc-KS-aW2" eventType="touchUpInside" id="XxN-jw-mEf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEy-hc-UZq">
+                                <frame key="frameInset" minX="39" minY="295" width="86.5" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Items" image="Text - Add bus stop"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Pw-Da-KHb">
+                                <frame key="frameInset" minX="305.5" minY="295" width="24.5" height="12.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Edit" image="Text - Edit"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6MR-dz-HWh">
+                                <frame key="frameInset" minY="368" width="375" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="aPU-t5-Lzw" customClass="ItemCell" customModule="LetsDoIt" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aPU-t5-Lzw" id="Xqk-FH-riq">
+                                            <frame key="frameInset" width="375" height="79"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apple x4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asf-1H-Mv2">
+                                                    <frame key="frameInset" minX="38" minY="22" width="54.5" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="13"/>
+                                                    <color key="textColor" red="0.30588235289999999" green="0.31764705879999999" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grocery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OiS-m0-5G6">
+                                                    <frame key="frameInset" minX="38" minY="44" width="45.5" height="13.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="10"/>
+                                                    <color key="textColor" red="0.65098039220000004" green="0.66274509800000003" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Arrow Select" translatesAutoresizingMaskIntoConstraints="NO" id="IYf-i1-SVk">
+                                                    <frame key="frameInset" minX="337" minY="28" width="13" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageMark" destination="IYf-i1-SVk" id="zwU-KL-JVL"/>
+                                            <outlet property="itemName" destination="asf-1H-Mv2" id="5IZ-lf-NbV"/>
+                                            <outlet property="itemType" destination="OiS-m0-5G6" id="eh8-6V-pHz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="addItemButton" destination="kEy-hc-UZq" id="dkF-13-d8A"/>
+                        <outlet property="editButton" destination="4Pw-Da-KHb" id="4N8-9O-Ycz"/>
+                        <outlet property="generalButton" destination="FD9-X8-VOB" id="HH5-Rc-PTO"/>
+                        <outlet property="homeButton" destination="nOA-wi-Df2" id="HRG-Og-hIA"/>
+                        <outlet property="listButton" destination="VzA-O9-8P9" id="bam-VL-esP"/>
+                        <outlet property="tableView" destination="6MR-dz-HWh" id="vS6-Nu-dZr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdC-Ny-rsI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1124" y="2748"/>
         </scene>
     </scenes>
     <resources>
