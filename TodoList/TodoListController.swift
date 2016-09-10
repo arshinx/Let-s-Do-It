@@ -19,7 +19,14 @@ class TodoListController: UIViewController, NSFetchedResultsControllerDelegate {
     @IBOutlet weak var addItemButton: UIButton!
     @IBOutlet weak var editButton: UIButton!
     
-    // 
+    // Actions
+    @IBAction func generalButtonPressed(_ sender: AnyObject) {
+        
+        homeButton.setImage(UIImage(named: ""), for: UIControlState.normal)
+        listButton.setImage(UIImage(named: ""), for: UIControlState.normal)
+        generalButton.setImage(UIImage(named: ""), for: UIControlState.normal)
+    }
+    
     
     lazy var dataSource: DataSource = {
         return DataSource(tableView: self.tableView)

@@ -164,6 +164,9 @@
                                 <frame key="frameInset" minX="12" minY="123" width="113" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="General Button" image="General Button Deselected"/>
+                                <connections>
+                                    <action selector="generalButtonPressed:" destination="WYW-CA-zb1" eventType="touchUpInside" id="e6S-t5-aKW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bo-y0-wUw">
                                 <frame key="frameInset" minX="133" minY="123" width="113" height="80"/>
