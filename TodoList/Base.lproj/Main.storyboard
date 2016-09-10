@@ -240,17 +240,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRl-Q9-aIB">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRl-Q9-aIB">
+                                <frame key="frameInset" minX="0.5" minY="28" width="146" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="17.399999999999999" id="a5S-kQ-sdT"/>
-                                    <constraint firstAttribute="width" constant="100.34" id="fCi-zA-Uod"/>
+                                    <constraint firstAttribute="height" constant="25" id="a5S-kQ-sdT"/>
+                                    <constraint firstAttribute="width" constant="146" id="fCi-zA-Uod"/>
                                 </constraints>
-                                <state key="normal" title="Cancel"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.30588235289999999" green="0.31764705879999999" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="cancel:" destination="OWc-Q1-rRI" eventType="touchUpInside" id="9gr-Ug-9x6"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Text Here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MZN-vG-en2">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Enter Text Here..." textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="MZN-vG-en2">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="m2s-TP-lfF"/>
                                     <constraint firstAttribute="width" constant="258" id="qdI-Q7-blm"/>
@@ -261,10 +265,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEY-hw-e0M">
-                                <frame key="frameInset" minX="272" minY="28" width="100.5" height="17.5"/>
+                                <frame key="frameInset" minX="227" minY="28" width="146" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100.34" id="byg-Ko-HSt"/>
-                                    <constraint firstAttribute="height" constant="17.399999999999999" id="lgD-6P-9aR"/>
+                                    <constraint firstAttribute="width" constant="146" id="byg-Ko-HSt"/>
+                                    <constraint firstAttribute="height" constant="25" id="lgD-6P-9aR"/>
                                 </constraints>
                                 <state key="normal" title="Add" image="Text - Add bus stop"/>
                                 <connections>
@@ -281,7 +285,7 @@
                             <constraint firstItem="plF-SA-UZ1" firstAttribute="top" secondItem="MZN-vG-en2" secondAttribute="bottom" constant="480" id="RtR-wR-vnl"/>
                             <constraint firstItem="MZN-vG-en2" firstAttribute="top" secondItem="pRl-Q9-aIB" secondAttribute="bottom" constant="100" id="ZDq-Je-LzZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gEY-hw-e0M" secondAttribute="trailing" constant="0.5" id="bgy-sz-fqx"/>
-                            <constraint firstItem="pRl-Q9-aIB" firstAttribute="leading" secondItem="Mgf-im-SmG" secondAttribute="leadingMargin" id="qaf-3K-Fao"/>
+                            <constraint firstItem="pRl-Q9-aIB" firstAttribute="leading" secondItem="Mgf-im-SmG" secondAttribute="leadingMargin" constant="0.5" id="qaf-3K-Fao"/>
                         </constraints>
                     </view>
                     <connections>
