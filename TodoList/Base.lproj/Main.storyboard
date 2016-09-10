@@ -474,7 +474,7 @@
                                     <constraint firstAttribute="width" constant="300" id="LOl-xw-wJ8"/>
                                     <constraint firstAttribute="height" constant="44" id="ZDa-jz-C5b"/>
                                 </constraints>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.21960784489999999" green="0.0078431377190000002" blue="0.85490196939999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
