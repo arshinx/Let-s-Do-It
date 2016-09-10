@@ -7,7 +7,11 @@
 import UIKit
 import CoreData
 
-class TodoListController: UITableViewController, NSFetchedResultsControllerDelegate {
+class TodoListController: UIViewController, NSFetchedResultsControllerDelegate {
+    
+    // Outlets
+    @IBOutlet weak var tableView: UITableView!
+    
     
     lazy var dataSource: DataSource = {
         return DataSource(tableView: self.tableView)
@@ -36,7 +40,7 @@ class TodoListController: UITableViewController, NSFetchedResultsControllerDeleg
     
     // MARK: - UITableViewDelegate
 
-    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
         return .delete
     }
 }

@@ -217,12 +217,20 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageMark" destination="mj3-KR-VFI" id="g1l-mD-B1K"/>
+                                            <outlet property="itemName" destination="Lw3-U3-7z7" id="mic-w8-bDy"/>
+                                            <outlet property="itemType" destination="YgL-ge-vGz" id="7Ve-jb-p6Q"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="UmN-m0-H7c" id="BE8-y9-JgW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7LQ-cd-Pk8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
