@@ -222,6 +222,7 @@
                         <outlet property="homeButton" destination="4bo-y0-wUw" id="u86-jC-VmV"/>
                         <outlet property="listButton" destination="cR6-Nv-IgN" id="DwH-SQ-z6b"/>
                         <outlet property="tableView" destination="UmN-m0-H7c" id="BE8-y9-JgW"/>
+                        <segue destination="vql-Nb-3Mu" kind="presentation" identifier="showItem" id="0dO-Yh-EiG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7LQ-cd-Pk8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -296,7 +297,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YKS-ft-JHF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1933.5999999999999" y="2061.3193403298351"/>
+            <point key="canvasLocation" x="2218" y="1708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="soA-FG-SA6">
@@ -444,6 +445,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gdC-Ny-rsI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1124" y="2748"/>
+        </scene>
+        <!--Update Item View Controller-->
+        <scene sceneID="sef-Ts-q7m">
+            <objects>
+                <viewController id="vql-Nb-3Mu" customClass="UpdateItemViewController" customModule="LetsDoIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2j7-Of-N31"/>
+                        <viewControllerLayoutGuide type="bottom" id="j4W-Cg-Fl2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q1k-1a-snS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oz2-xD-cF1">
+                                <frame key="frameInset" minX="158" minY="25" width="59" height="33"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Update">
+                                    <color key="titleColor" red="0.30588235289999999" green="0.31764705879999999" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="update:" destination="vql-Nb-3Mu" eventType="touchUpInside" id="2is-pP-zbo"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3aX-lY-i4r">
+                                <frame key="frameInset" minX="37" minY="100" width="300" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="LOl-xw-wJ8"/>
+                                    <constraint firstAttribute="height" constant="44" id="ZDa-jz-C5b"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3aX-lY-i4r" firstAttribute="centerX" secondItem="Q1k-1a-snS" secondAttribute="centerX" id="It0-1e-Kzu"/>
+                            <constraint firstItem="3aX-lY-i4r" firstAttribute="top" secondItem="Oz2-xD-cF1" secondAttribute="bottom" constant="44" id="OBA-Lf-NHQ"/>
+                            <constraint firstItem="Oz2-xD-cF1" firstAttribute="centerX" secondItem="Q1k-1a-snS" secondAttribute="centerX" id="p7o-nh-3jN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="3aX-lY-i4r" id="E34-q6-dXT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ut9-Cd-jbX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2216.8000000000002" y="2422.0389805097452"/>
         </scene>
     </scenes>
     <resources>
