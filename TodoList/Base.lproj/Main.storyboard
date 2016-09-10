@@ -139,10 +139,10 @@
             </objects>
             <point key="canvasLocation" x="1124" y="1179"/>
         </scene>
-        <!--View Controller-->
+        <!--Todo List Controller-->
         <scene sceneID="x2a-Pc-I96">
             <objects>
-                <viewController id="WYW-CA-zb1" sceneMemberID="viewController">
+                <viewController id="WYW-CA-zb1" customClass="TodoListController" customModule="LetsDoIt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Szs-2x-nF6"/>
                         <viewControllerLayoutGuide type="bottom" id="Gdh-xD-8ao"/>
