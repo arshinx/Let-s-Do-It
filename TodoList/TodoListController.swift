@@ -62,7 +62,7 @@ class TodoListController: UIViewController, NSFetchedResultsControllerDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showItem" {
-            guard let destinationController = segue.destination as? DetailViewController, let indexPath = tableView.indexPathForSelectedRow else { return }
+            guard let destinationController = segue.destination as? UpdateItemViewController, let indexPath = tableView.indexPathForSelectedRow else { return }
             
             let item = dataSource.objectAtIndexPath(indexPath) as! Item
             destinationController.item = item
