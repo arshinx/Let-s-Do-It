@@ -24,10 +24,8 @@ class AddItemViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func cancel(_ sender: AnyObject) {
-        dismiss(animated: true, completion: nil)
-    }
     
+    // Actions
     @IBAction func save(_ sender: AnyObject) {
         
         guard let text = textField.text else { return }
@@ -38,6 +36,11 @@ class AddItemViewController: UIViewController {
         
         dataController.saveContext()
         
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func cancel(_ sender: AnyObject) {
+        // Dismiss View
         dismiss(animated: true, completion: nil)
     }
     
