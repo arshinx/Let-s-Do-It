@@ -2,8 +2,6 @@
 //  DetailViewController.swift
 //  TodoList
 //
-//  Created by Pasan Premaratne on 6/22/16.
-//  Copyright © 2016 Treehouse. All rights reserved.
 //
 
 import UIKit
