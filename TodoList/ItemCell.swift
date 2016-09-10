@@ -10,6 +10,12 @@ import UIKit
 
 class ItemCell: UITableViewCell {
 
+    // Outlets
+    @IBOutlet weak var itemName: UILabel!
+    @IBOutlet weak var itemType: UILabel!
+    @IBOutlet weak var imageMark: UIImageView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
