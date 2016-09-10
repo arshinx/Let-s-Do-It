@@ -229,6 +229,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="addItemButton" destination="aZs-gQ-XHb" id="O0S-mV-Eab"/>
+                        <outlet property="editButton" destination="F3N-cG-RLG" id="RrX-V2-bEw"/>
+                        <outlet property="generalButton" destination="SQO-0f-4vx" id="ucq-S7-OwB"/>
+                        <outlet property="homeButton" destination="4bo-y0-wUw" id="u86-jC-VmV"/>
+                        <outlet property="listButton" destination="cR6-Nv-IgN" id="DwH-SQ-z6b"/>
                         <outlet property="tableView" destination="UmN-m0-H7c" id="BE8-y9-JgW"/>
                     </connections>
                 </viewController>

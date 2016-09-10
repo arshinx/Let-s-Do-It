@@ -12,6 +12,14 @@ class TodoListController: UIViewController, NSFetchedResultsControllerDelegate {
     // Outlets
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var generalButton: UIButton!
+    @IBOutlet weak var homeButton: UIButton!
+    @IBOutlet weak var listButton: UIButton!
+    
+    @IBOutlet weak var addItemButton: UIButton!
+    @IBOutlet weak var editButton: UIButton!
+    
+    // 
     
     lazy var dataSource: DataSource = {
         return DataSource(tableView: self.tableView)
