@@ -180,6 +180,9 @@
                                 <frame key="frameInset" minX="254" minY="123" width="113" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="List Button" image="List Button Deselected"/>
+                                <connections>
+                                    <action selector="listButtonPressed:" destination="WYW-CA-zb1" eventType="touchUpInside" id="Rj2-TN-tQm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZs-gQ-XHb">
                                 <frame key="frameInset" minX="39" minY="295" width="86.5" height="15"/>

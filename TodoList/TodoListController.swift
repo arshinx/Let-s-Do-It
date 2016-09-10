@@ -36,6 +36,13 @@ class TodoListController: UIViewController, NSFetchedResultsControllerDelegate {
         homeButton.setImage(UIImage(named: "Home Button"), for: UIControlState.normal)
     }
     
+    @IBAction func listButtonPressed(_ sender: AnyObject) {
+        
+        // Change States
+        homeButton.setImage(UIImage(named: "Home Button Deselected"), for: UIControlState.normal)
+        generalButton.setImage(UIImage(named: "General Button Deselected"), for: UIControlState.normal)
+        listButton.setImage(UIImage(named: "List Button"), for: UIControlState.normal)
+    }
     
     lazy var dataSource: DataSource = {
         return DataSource(tableView: self.tableView)
