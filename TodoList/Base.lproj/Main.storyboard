@@ -240,39 +240,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEY-hw-e0M">
-                                <frame key="frameInset" minX="229" minY="28" width="130" height="22.5"/>
-                                <state key="normal" title="Add" image="Text - Add bus stop"/>
-                                <connections>
-                                    <action selector="save:" destination="OWc-Q1-rRI" eventType="touchUpInside" id="Vix-GK-ann"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRl-Q9-aIB">
-                                <frame key="frameInset" minX="16" minY="28" width="130" height="22.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRl-Q9-aIB">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="a5S-kQ-sdT"/>
+                                    <constraint firstAttribute="width" constant="86.5" id="fCi-zA-Uod"/>
+                                </constraints>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
                                     <action selector="cancel:" destination="OWc-Q1-rRI" eventType="touchUpInside" id="9gr-Ug-9x6"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MZN-vG-en2">
-                                <frame key="frameInset" minX="58" minY="143" width="258" height="44"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Text Here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MZN-vG-en2">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="m2s-TP-lfF"/>
                                     <constraint firstAttribute="width" constant="258" id="qdI-Q7-blm"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="tTC-MB-bDJ"/>
                                 </constraints>
                                 <color key="textColor" red="0.21960784489999999" green="0.0078431377190000002" blue="0.85490196939999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEY-hw-e0M">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86.5" id="byg-Ko-HSt"/>
+                                    <constraint firstAttribute="height" constant="15" id="lgD-6P-9aR"/>
+                                </constraints>
+                                <state key="normal" title="Add" image="Text - Add bus stop"/>
+                                <connections>
+                                    <action selector="save:" destination="OWc-Q1-rRI" eventType="touchUpInside" id="Vix-GK-ann"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gEY-hw-e0M" firstAttribute="top" secondItem="fMz-Xu-7f7" secondAttribute="bottom" constant="8" id="2rS-eN-qdM"/>
-                            <constraint firstItem="MZN-vG-en2" firstAttribute="top" secondItem="pRl-Q9-aIB" secondAttribute="bottom" constant="92.5" id="G6a-aW-opk"/>
-                            <constraint firstItem="MZN-vG-en2" firstAttribute="leading" secondItem="Mgf-im-SmG" secondAttribute="leadingMargin" constant="42" id="Has-Xs-jxP"/>
-                            <constraint firstItem="pRl-Q9-aIB" firstAttribute="leading" secondItem="Mgf-im-SmG" secondAttribute="leadingMargin" id="MnW-GG-E0E"/>
-                            <constraint firstItem="pRl-Q9-aIB" firstAttribute="top" secondItem="fMz-Xu-7f7" secondAttribute="bottom" constant="8" id="f1G-Hp-w7h"/>
-                            <constraint firstItem="gEY-hw-e0M" firstAttribute="trailing" secondItem="Mgf-im-SmG" secondAttribute="trailingMargin" id="mlh-m5-Ngt"/>
+                            <constraint firstItem="gEY-hw-e0M" firstAttribute="top" secondItem="fMz-Xu-7f7" secondAttribute="bottom" constant="8" id="2nU-6u-8ZJ"/>
+                            <constraint firstItem="pRl-Q9-aIB" firstAttribute="top" secondItem="fMz-Xu-7f7" secondAttribute="bottom" constant="8" id="7Kv-E1-Iai"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MZN-vG-en2" secondAttribute="trailing" constant="42" id="Hku-WJ-u2R"/>
+                            <constraint firstItem="MZN-vG-en2" firstAttribute="leading" secondItem="Mgf-im-SmG" secondAttribute="leadingMargin" constant="42" id="MVJ-5L-WjV"/>
+                            <constraint firstItem="plF-SA-UZ1" firstAttribute="top" secondItem="MZN-vG-en2" secondAttribute="bottom" constant="480" id="RtR-wR-vnl"/>
+                            <constraint firstItem="MZN-vG-en2" firstAttribute="top" secondItem="pRl-Q9-aIB" secondAttribute="bottom" constant="100" id="ZDq-Je-LzZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gEY-hw-e0M" secondAttribute="trailing" constant="0.5" id="bgy-sz-fqx"/>
+                            <constraint firstItem="pRl-Q9-aIB" firstAttribute="leading" secondItem="Mgf-im-SmG" secondAttribute="leadingMargin" id="qaf-3K-Fao"/>
                         </constraints>
                     </view>
                     <connections>
