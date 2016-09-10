@@ -253,10 +253,10 @@
             </objects>
             <point key="canvasLocation" x="1124" y="2058"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Item View Controller-->
         <scene sceneID="L3L-c1-Fe4">
             <objects>
-                <viewController id="OWc-Q1-rRI" sceneMemberID="viewController">
+                <viewController id="OWc-Q1-rRI" customClass="AddItemViewController" customModule="LetsDoIt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fMz-Xu-7f7"/>
                         <viewControllerLayoutGuide type="bottom" id="plF-SA-UZ1"/>
@@ -269,11 +269,17 @@
                                 <frame key="frameInset" minX="229" minY="28" width="130" height="22.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add" image="Text - Add bus stop"/>
+                                <connections>
+                                    <action selector="save:" destination="OWc-Q1-rRI" eventType="touchUpInside" id="Vix-GK-ann"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRl-Q9-aIB">
                                 <frame key="frameInset" minX="16" minY="28" width="130" height="22.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancel:" destination="OWc-Q1-rRI" eventType="touchUpInside" id="9gr-Ug-9x6"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MZN-vG-en2">
                                 <frame key="frameInset" minX="58" minY="143" width="258" height="44"/>
@@ -288,6 +294,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="MZN-vG-en2" id="Qcz-hL-127"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YKS-ft-JHF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
