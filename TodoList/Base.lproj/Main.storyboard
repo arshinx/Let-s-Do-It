@@ -242,15 +242,15 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRl-Q9-aIB">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="15" id="a5S-kQ-sdT"/>
-                                    <constraint firstAttribute="width" constant="86.5" id="fCi-zA-Uod"/>
+                                    <constraint firstAttribute="height" constant="17.399999999999999" id="a5S-kQ-sdT"/>
+                                    <constraint firstAttribute="width" constant="100.34" id="fCi-zA-Uod"/>
                                 </constraints>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
                                     <action selector="cancel:" destination="OWc-Q1-rRI" eventType="touchUpInside" id="9gr-Ug-9x6"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Text Here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MZN-vG-en2">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Text Here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MZN-vG-en2">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="m2s-TP-lfF"/>
                                     <constraint firstAttribute="width" constant="258" id="qdI-Q7-blm"/>
@@ -260,10 +260,11 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEY-hw-e0M">
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEY-hw-e0M">
+                                <frame key="frameInset" minX="272" minY="28" width="100.5" height="17.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="86.5" id="byg-Ko-HSt"/>
-                                    <constraint firstAttribute="height" constant="15" id="lgD-6P-9aR"/>
+                                    <constraint firstAttribute="width" constant="100.34" id="byg-Ko-HSt"/>
+                                    <constraint firstAttribute="height" constant="17.399999999999999" id="lgD-6P-9aR"/>
                                 </constraints>
                                 <state key="normal" title="Add" image="Text - Add bus stop"/>
                                 <connections>
