@@ -22,9 +22,14 @@ class TodoListController: UIViewController, NSFetchedResultsControllerDelegate {
     // Actions
     @IBAction func generalButtonPressed(_ sender: AnyObject) {
         
-        homeButton.setImage(UIImage(named: ""), for: UIControlState.normal)
-        listButton.setImage(UIImage(named: ""), for: UIControlState.normal)
-        generalButton.setImage(UIImage(named: ""), for: UIControlState.normal)
+        // Change States
+        homeButton.setImage(UIImage(named: "Home Button Deselected"), for: UIControlState.normal)
+        listButton.setImage(UIImage(named: "List Button Deselected"), for: UIControlState.normal)
+        generalButton.setImage(UIImage(named: "General Button"), for: UIControlState.normal)
+    }
+    
+    @IBAction func homebuttonPressed(_ sender: AnyObject) {
+        
     }
     
     
